@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cal</title>
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <script src="browser.min.js"></script>
+    <script type="text/babel" src="cal.jsx"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100vh;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    #container {
+        height: 100%;
+    }
+
+    .root {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screen {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .screen .number {
+        font-size: 50px;
+    }
+
+    .operator {
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .operator .item {
+        width: 25%;
+        height: 20%;
+        border: 1px solid lightpink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .operator .item .text{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+</style>
+<body>
+<div id="container"></div>
+
+</body>
+</html>
